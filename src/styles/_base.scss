@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    h1 {
+        color: $third-text-color;
+    }
+    h1, h2 {
+        font-family: $primary-font-family;
+    }
+
+    p {
+        font-family: $secondary-font-family;
+    }
+}
+
+.icon-button {
+    background: none;
+    border: none;
+}
+  
+.icon-button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+.profile {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: rem(40);
+}
+
+.container {
+    background-image: url("/src/imgs/background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 80vw;
+        background-color: white;
+        font-family: $primary-font-family;
+        padding: rem(10);
+
+        .info {
+            align-self: flex-start;
+            padding: rem(10);
+        }
+    
+        h1, h2, h3{
+            margin: 0;
+        }
+    
+        h3 {
+            color: $secondary-text-color;
+            font-size: rem(16);
+        }
+        p {
+            font-family: $secondary-font-family;
+        }
+    
+        .icons {
+            display: flex;
+            gap:rem(50);
+        }
+    }
+}
+
+.tech-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(10);
+    background-color: $primary-color;
+    h2 {
+        font-size: rem(42);
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    h2 {
+        color: $third-text-color;
+        font-size: rem(42);
+        margin: 0;
+        text-align: center;
+    }
+    .project {
+        display: flex;
+        flex-direction: column;
+        max-width: 90vw;
+        padding: rem(20);
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: rem(5);
+            span {
+                background-color: $sixth-color;
+                padding: rem(3);
+                text-transform: uppercase;
+                color: #FFFFFF;
+                font-family: $third-font-family;
+                font-size: rem(10);
+            }
+        }
+
+        button {
+            background-color: white;
+            text-transform: uppercase;
+            border: solid $third-text-color rem(3);
+            margin-top: rem(10);
+            margin-bottom: rem(10);
+            border-radius: rem(40);
+            width: rem(110);
+            height: rem(35);
+            font-family: $primary-font-family;
+            font-size: rem(12);
+        }
+    }
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $fifth-color;
+    text-align: center;
+
+    h2 {
+        font-size: rem(32);
+        font-weight: 100;
+    }
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        h3 {
+            font-family: $primary-font-family;
+            display: inline-block;
+            margin: 0;
+            margin-top: rem(20);
+            color: white;
+            padding: 0.2em 0.5em;
+        }
+
+        li {
+            font-family: $secondary-font-family;
+        }
+
+        .label-one {
+            background-color: $sixth-color;
+        }
+
+        .label-two {
+            background-color: $seven-color;
+        }
+
+        .label-three {
+            background-color: $eight-color;
+        }
+
+        .label-four {
+            background-color: $nine-color;
+        }
+        
+    }
+}
+
+.contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        font-family: $primary-font-family;
+        padding: rem(10);
+    
+        h2, h3{
+            color: $third-text-color;
+        }
+
+        h2 {
+            font-size: rem(42);
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+
+            h3, h4, h5 {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    
+        .icons {
+            display: flex;
+            flex-direction: row;
+            gap:rem(50);
+            padding-top: rem(20);
+            padding-bottom: rem(80);
+        }
+}
+
+
+
+
+
+
