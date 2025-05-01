@@ -7,6 +7,7 @@
 }
 
 .tech-container {
+    grid-template-columns: repeat(4, 1fr);
     p {
         padding-left: rem(100);
         padding-right: rem(100);

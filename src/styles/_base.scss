@@ -24,8 +24,8 @@ body {
 
 
 .profile {
-    height: 120px;
-    width: 120px;
+    height: rem(120);
+    width: rem(120);
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: rem(40);
@@ -39,6 +39,7 @@ body {
     object-fit: cover;
     max-width: 335px;
     max-height: 258px;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -83,17 +84,25 @@ body {
         }
     }
 }
-
 .tech-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: rem(30);
+    padding: rem(50);
+    display: grid;
+    grid-template-columns: 1fr; // Default: en kolumn (mobil)
+    gap: rem(20);
     background-color: $primary-color;
+  
     h2 {
-        font-size: rem(42);
-        padding: 0;
-        margin: 0;
+      grid-column: 1 / -1;
+      text-align: center;
+      font-size: 3rem;
+      margin: 0;
+      padding: 0;
+    }
+  
+    ul {
+        
+      border-radius: rem(8);
+      list-style: none;
     }
 }
 
@@ -123,7 +132,6 @@ body {
 
         p {
             max-width: 40ch;
-            min-height: rem(80);
         }
 
         div {
@@ -157,8 +165,21 @@ body {
             margin: rem(10);
             margin-left: 0;
         }
+
+        a:hover {
+            transform: scale(1.1);
+        }
+        .disabled-link {
+            background-color: lightgray;
+            border: solid darkgrey rem(3);
+        }
+        
+        .disabled-link:hover {
+            transform: none;
+        }
     }
 }
+
 
 .skill-container {
     display: flex;
@@ -213,10 +234,10 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: white;
+        background-color: $fifth-color;
         font-family: $primary-font-family;
         padding: rem(10);
-    
+
         h2, h3{
             color: $third-text-color;
         }
@@ -231,6 +252,7 @@ body {
             h3, h4, h5 {
                 padding: 0;
                 margin: 0;
+                font-family: $secondary-font-family;
             }
         }
     
@@ -242,9 +264,3 @@ body {
             padding-bottom: rem(80);
         }
 }
-
-
-
-
-
-

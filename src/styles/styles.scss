@@ -2,10 +2,10 @@
 @import 'variables';
 @import 'base';
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 720px) {
   @import 'tablet'; 
 }
   
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   @import 'desktop';
 }
