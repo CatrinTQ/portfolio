@@ -12,6 +12,10 @@ body {
     }
 }
 
+ul {
+    list-style: none;
+}
+
 .icon-button {
     background: none;
     border: none;
@@ -44,7 +48,7 @@ body {
 
 
 .container {
-    background-image: url("../src/imgs/background.jpg");
+    background-image: url("/img/background.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
