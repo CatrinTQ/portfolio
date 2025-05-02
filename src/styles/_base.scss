@@ -91,7 +91,7 @@ ul {
 .tech-container {
     padding: rem(50);
     display: grid;
-    grid-template-columns: 1fr; // Default: en kolumn (mobil)
+    grid-template-columns: repeat(2, 1fr); // Default: en kolumn (mobil)
     gap: rem(20);
     background-color: $primary-color;
   
