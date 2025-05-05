@@ -92,9 +92,8 @@ ul {
     padding: rem(50);
     display: grid;
     grid-template-columns: repeat(2, 1fr); // Default: en kolumn (mobil)
-    gap: rem(20);
+    gap: rem(10);
     background-color: $primary-color;
-  
     h2 {
       grid-column: 1 / -1;
       text-align: center;
