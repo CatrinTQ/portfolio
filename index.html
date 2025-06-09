@@ -11,6 +11,20 @@
 </head>
 <body>
     <div class="container">
+        <div class="switch-container">
+            <label class="language-switch">
+                <input type="checkbox" id="languageToggle">
+                <span class="slider">
+                    <span class="label sv">SV</span>
+                    <span class="label en">EN</span>
+                </span>
+            </label>
+
+            <button id="theme-toggle" class="theme-toggle">
+                <span id="theme-icon">☀️</span>
+            </button>                 
+        </div>
+          
         <img class="profile profile-mobile" width="120" height="120" src="src/img/cvbild.jpeg" />
         <div class="about">
         <img class="profile profile-tablet" width="120" height="120" src="src/img/cvbild.jpeg" />
@@ -117,6 +131,24 @@
                 <span>MariaDB</span>
             </div>
             <a href="https://github.com/CatrinTQ/webshop-api" target="_blank">Go to Github</a>
+        </div>
+        <div class="project">
+            <img class="project-image" src="src/img/todo-project.png" />
+            <h3>React Todo App</h3>
+            <h4>School project</h4>
+            <p>A responsive Todo app built with React and TypeScript. 
+                Users can add, remove, and sort todos, as well as mark tasks as done or undone. 
+                Todos are saved in localStorage to persist between sessions. The app features 
+                priority selection, a clean UI using Tailwind CSS and dark mode toggle (in progress).</p>
+            <div class="tech-stack">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Tailwind</span>
+            </div>
+            <a href="https://catrintq.github.io/TodoApp/" target="_blank">
+                Live Site
+            </a>
+            <a href="https://github.com/CatrinTQ/TodoApp" target="_blank">Go to Github</a>
         </div>
         <div class="project">
             <img class="project-image" width="335" height="258" src="src/img/tough-cookie.png" />
