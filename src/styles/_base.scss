@@ -12,20 +12,110 @@ body {
     }
 }
 
-ul {
-    list-style: none;
+.switch-container {
+    display: flex;
+    min-width: 90vw;
+    justify-content: space-between;
 }
 
-.icon-button {
-    background: none;
-    border: none;
+.language-switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 34px;
+    align-self: flex-start;
+    
+    
+    .language-switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        top: 0;
+        left: -2px;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        border-radius: 34px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .slider::before {
+        content: "";
+        position: absolute;
+        height: 28px;
+        width: 28px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: transform 0.3s;
+        border-radius: 50%;
+        z-index: 2;
+    }
+    
+    .label {
+      position: absolute;
+      width: 50%;
+      line-height: 34px;
+      font-size: 14px;
+      text-align: center;
+      color: white;
+      z-index: 1;
+      pointer-events: none;
+    }
+    .label.sv {
+        left: 0;
+    }
+      
+    .label.en {
+        right: 0;
+    }
 }
   
+.language-switch input:checked + .slider {
+    background-color: #4CAF50;
+}
+  
+.language-switch input:checked + .slider::before {
+    transform: translateX(36px);
+}
+
+.theme-toggle {
+    background-color: #FFF;
+    border: none;
+    border-radius: 999px;
+    width: 70px;
+    height: 34px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+    align-self: flex-end;
+}
+
+.theme-toggle span {
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    font-size: 22px;
+    transition: transform 0.3s;
+}
+
+.dark-mode .theme-toggle {
+    background-color: #444;
+}
+
+.dark-mode .theme-toggle span {
+    transform: translateX(28px);
+}
+
 .icon-button:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
-
+  
 .profile {
     height: rem(120);
     width: rem(120);
@@ -41,7 +131,7 @@ ul {
 .project-image {
     object-fit: cover;
     max-width: 335px;
-    max-height: 258px;
+    min-height: 258px;
     box-shadow: 2px 2px 4px #000000;
 }
 

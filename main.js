@@ -1,8 +1,13 @@
-document.querySelectorAll('.accordion-toggle').forEach(button => {
-    button.addEventListener('click', () => {
-      button.classList.toggle('active');
-      const content = button.nextElementSibling;
-      content.classList.toggle('show');
-    });
-  });
-  
+const toggle = document.getElementById("theme-toggle");
+const icon = document.getElementById("theme-icon");
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  if (document.body.classList.contains("dark-mode")) {
+    icon.textContent = "🌙";
+  } else {
+    icon.textContent = "☀️";
+  }
+});
+
